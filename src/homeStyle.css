@@ -1,0 +1,81 @@
+.home{
+    background-image: url("../src/Components/images/banner.jfif");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    height:100vh;
+    filter: blur(2px);
+}
+.details{
+    display:flex;
+    justify-content:center;
+    width:100vw;
+    margin-bottom: 4%;
+}
+.register{
+    z-index:1;
+    text-align: center;
+    height:100vh;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content: center;
+    position: absolute;
+    width:100vw;
+    top:1px;
+
+}
+.register h1{
+    margin-bottom: 5%;
+}
+.details input{
+    padding: 2%;
+    width:30%;
+    border-style: none;
+    border-radius: 10px 0px 0px 10px;
+}
+.details button{
+    background-color: rgb(77, 63, 209);
+    color:white;
+    padding: 2%;
+    width:10%;
+    border-style: none;
+    border-radius: 0px 10px 10px 0px;
+}
+.details button:hover{
+    background-color: rgb(55, 55, 56);
+}
+
+.category{
+    margin-top:5%;
+    text-align: center;
+}
+.blocks{
+    width:80%;
+    margin:auto;
+    margin-top:8rem;
+}
+.block{
+    display:flex;
+    justify-content:space-around;
+    margin-top:5%;
+}
+.block img{
+    height:400px;
+    width:350px;
+}
+
+.block >div{
+    margin: 0% 5% 0% 5% ;
+    display:flex;
+    align-items:center;
+}
+.line{
+    border: 1px solid black;
+    margin:10% 20% 10% 20%;
+}
+
+.footer{
+    height:20vh;
+    background-color:rgb(56, 55, 55);
+    margin-top:5%;
+}
