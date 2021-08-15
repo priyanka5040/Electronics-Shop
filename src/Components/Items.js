@@ -2,7 +2,6 @@ import image from "./images/mobiles/mob3.jpg";
 import "../storeStyle.css";
 
 function Items(props) {
-    const {category} = props;
     
     return(
         <div className="items">
