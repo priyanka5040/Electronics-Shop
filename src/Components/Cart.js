@@ -1,4 +1,4 @@
-import "./cartStyle.css";
+import "../cartStyle.css";
 
 function Cart(props) {
     const {items} = props;
