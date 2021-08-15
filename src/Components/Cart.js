@@ -6,7 +6,7 @@ function Cart(props) {
     return(
         <div className="cartList">
             {items.map((ele)=>{
-                return<div className="cart">
+                return<div key={ele.id} className="cart">
                         <div>
                             <h1>{ele.title}</h1>
                         </div>

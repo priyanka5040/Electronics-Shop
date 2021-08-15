@@ -21,7 +21,12 @@ function Header(props) {
             <div><li id="watch" className = "navItems">Watches</li></div>
             <div><li id="laptop" className = "navItems">Laptops</li></div>
         </div>
-        <div className = "cartContainer"><img className = "cartIcon" src = {cart} alt="cart" /></div>
+        <div className = "cartContainer"  id="cart" onClick={
+            (event) => {
+                console.log(event.target);
+                setCurrentPage(event.target.id); 
+            }
+        }><img id="cart" className = "cartIcon" src = {cart} alt="cart" /></div>
         
     </div>
 }
