@@ -1,7 +1,42 @@
+.mobileStore{
+    display:flex;
+}
+.side{
+    width : 35vw;
+    border-right: 1px solid rgb(180, 178, 178);
+}
+.description{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+.desc{
+    text-align:center;
+}
+.addToCart{
+    background-color:black;
+    border-style: none;
+    color: white;
+    padding:10px;
+    width:150px;
+    margin-top:15px;
+}
 .app{
     display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
+.items{
+    margin-bottom:7%;
+    box-shadow: 2px 2px 2px 2px rgb(204, 202, 202);
+    height : 30rem;
+    width:20rem;
+    
+}
+
 .items img{
-    height : 200px;
-    width:200px;
+    display: block;
+    height : 15rem;
+    width:15rem;
+    padding:15%;
 }

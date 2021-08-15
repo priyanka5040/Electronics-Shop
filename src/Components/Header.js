@@ -1,6 +1,7 @@
 import "../headerStyle.css";
 import logo from "./images/logo.jpg";
 import cart from "./images/cart.png";
+
 function Header(props) {
     let {setCurrentPage} = props;
 
@@ -20,7 +21,7 @@ function Header(props) {
             <div><li id="watch" className = "navItems">Watches</li></div>
             <div><li id="laptop" className = "navItems">Laptops</li></div>
         </div>
-        <div className = "cartContainer"><li href="#"><img className = "cart" src = {cart} alt="cart" /></li></div>
+        <div className = "cartContainer"><img className = "cartIcon" src = {cart} alt="cart" /></div>
         
     </div>
 }
