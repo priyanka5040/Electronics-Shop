@@ -5,11 +5,10 @@ import headphone from "./images/headphones.jpg";
 import laptop from "./images/laptops.jpg";
 import watch from "./images/watches.jpg";
 
-function Home(props){
-    let {setCurrentPage} = props;
+function Home(){
     
     return<>
-        <Header setCurrentPage = {setCurrentPage}/>
+        <Header/>
         <div className="home">
 
         </div>

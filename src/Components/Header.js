@@ -1,33 +1,20 @@
 import "../headerStyle.css";
 import logo from "./images/logo.jpg";
 import cart from "./images/cart.png";
+import {Link} from "react-router-dom";
 
-function Header(props) {
-    let {setCurrentPage} = props;
+function Header() {
 
     return <div className = "header">
-        <div><li href="#"><img className = "logo" src = {logo} alt="logo" /></li></div>
-        <div className = "nav" onClick={
-            (event) => {
-                if(event.target.className === "navItems"){
-                    console.log(event.target);
-                    setCurrentPage(event.target.id);
-
-                }
-            }
-        }>
-            <div><li id="mobile" className = "navItems">Mobile Phones</li></div>
-            <div><li id="headphone" className = "navItems">Headphones</li></div>
-            <div><li id="watch" className = "navItems">Watches</li></div>
-            <div><li id="laptop" className = "navItems">Laptops</li></div>
+        <div><Link to = "/" style={{ textDecoration: 'none'}}><img className = "logo" src = {logo} alt="logo" /></Link></div>
+        <div className = "nav">
+            <div><Link to = "/MobileStore" style={{ textDecoration: 'none'}}><li id="mobile" className = "navItems">Mobile Phones</li></Link></div>
+            <div><Link to = "/HeadphoneStore" style={{ textDecoration: 'none'}}><li id="headphone" className = "navItems">Headphones</li></Link></div>
+            <div><Link to = "/" style={{ textDecoration: 'none'}}><li id="watch" className = "navItems">Watches</li></Link></div>
+            <div><Link to = "/" style={{ textDecoration: 'none'}}><li id="laptop" className = "navItems">Laptops</li></Link></div>
         </div>
-        <div className = "cartContainer"  id="cart" onClick={
-            (event) => {
-                console.log(event.target);
-                setCurrentPage(event.target.id); 
-            }
-        }><img id="cart" className = "cartIcon" src = {cart} alt="cart" /></div>
-        
+        <div className = "cartContainer">
+            <Link to = "/Cart"><img className = "cartIcon" src = {cart} alt="cart" /></Link></div>
     </div>
 }
 export default Header;
