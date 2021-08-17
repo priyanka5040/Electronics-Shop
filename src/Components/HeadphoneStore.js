@@ -4,13 +4,9 @@ import "../storeStyle.css";
 import {headphones} from "./stocks";
 
 
-function HeadphoneStore(props){
-    let {cartItems, setCartItems} = props;
-
-    let addToCart = (newItem)=>{
-        setCartItems([...cartItems, newItem]);
-    }
-    return(<div>
+function HeadphoneStore(){
+    return(
+    <div>
         <Header/>
         <div className="store">
             <div className="side">
@@ -18,11 +14,12 @@ function HeadphoneStore(props){
             </div>
             <div className="app">
                 {headphones.map((headphone) => {
-                    return <Items key={headphone.id} item = {headphone} addToCart={addToCart}/>
+                    return <Items key={headphone.id} item = {headphone} />
                 })
             }
             </div>
         </div>
-    </div>);
+    </div>
+    );
 }
 export default HeadphoneStore;

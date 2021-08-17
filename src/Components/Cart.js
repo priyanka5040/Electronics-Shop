@@ -3,10 +3,14 @@ import {React, useContext} from "react";
 import {cartContext} from "../App";
 import remove from "./images/cross.png";
 import Header from "./Header";
+
+
 function Cart(props) {
+
     const {cartItems} = props;
     let {modifyCart, removeFromCart} = useContext(cartContext);
     let total = 0;
+
     if(cartItems.length === 0){
         return(<div>
             <Header />
@@ -19,6 +23,7 @@ function Cart(props) {
         <div className="cartList">
             {cartItems.map((ele, index)=>{
                 total += ele.price * ele.qty;
+                
                 return<div key={ele.id} className="cart">
                         <div className="cartItem">
                             <img className="cartItemImg" src={ele.url} alt={ele.name}/>

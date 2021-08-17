@@ -36,7 +36,7 @@ export default function App() {
     let newCart = [];
 
     cartItems.map((item, i)=>{
-      
+
       if(index === i){
         newCart.push(newItem);
       }
@@ -57,11 +57,8 @@ export default function App() {
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/MobileStore" component={MobileStore}/>
-          <Route path="/HeadphoneStore" 
-          render={(props) => (
-            <HeadphoneStore {...props} cartItems={cartItems} setCartItems={setCartItems}/>
-          )}
-           />
+          <Route path="/HeadphoneStore" component={HeadphoneStore}/>
+          
           <Route path="/Cart"
             render={(props) => (
               <Cart {...props} cartItems={cartItems} setCartItems={setCartItems}/>
