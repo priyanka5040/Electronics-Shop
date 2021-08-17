@@ -6,11 +6,24 @@
     margin-top: 5%;
 }
 .cartList{
-    height:100vh;
-    background-color:rgb(238, 234, 234);
+    width:100vw;  
 }
 .qty, .cart button{
     width:20px;
     border-style: none;
     border:1px solid black;
+    text-align: center;
+}
+.cartItemImg{
+    height:50px;
+    width:50px;
+}
+.checkout{
+    float : right;
+    margin : 10%;
+    margin-top:5%;
+}
+.removeItem img{
+    height:15px;
+    width:15px;
 }

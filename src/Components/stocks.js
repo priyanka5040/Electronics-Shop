@@ -1,5 +1,7 @@
 import img from "./images/mobiles/mob3.jpg";
 import img2 from "./images/headphones/headphone1.jpg";
+
+
 let mobiles = [ {id:1,name:"iPhone 11", url : img, price : 123,stock : 5},
                     {id:2,name:"iPhone 11", url : img, price : 123,stock : 5},
                     {id:3,name:"iPhone 11", url : img, price : 123,stock : 5},

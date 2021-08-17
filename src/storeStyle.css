@@ -1,5 +1,6 @@
 .store{
     display:flex;
+    margin-top: 2%;
 }
 .side{
     width : 35vw;
@@ -31,9 +32,7 @@
     box-shadow: 2px 2px 2px 2px rgb(204, 202, 202);
     height : 30rem;
     width:20rem;
-    
 }
-
 .items img{
     display: block;
     height : 15rem;
