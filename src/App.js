@@ -1,10 +1,12 @@
 import Home from "./Components/Home";
 import MobileStore from "./Components/MobileStore";
+import ProductDetail from "./Components/ProductDetail";
 import HeadphoneStore from "./Components/HeadphoneStore";
 import Cart from "./Components/Cart";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import React from "react";
 import {useState} from "react";
+
 
 let cartContext = React.createContext([]);
 
@@ -58,6 +60,7 @@ export default function App() {
           <Route path="/" exact component={Home} />
           <Route path="/MobileStore" component={MobileStore}/>
           <Route path="/HeadphoneStore" component={HeadphoneStore}/>
+          <Route path="/ProductDetail/:id" component={ProductDetail}/>
           
           <Route path="/Cart"
             render={(props) => (

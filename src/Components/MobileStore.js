@@ -1,10 +1,12 @@
 import Header from "./Header";
 import Items from "./Items";
 import "../storeStyle.css";
-import {mobiles} from "./stocks";
-
+import {stocks} from "./stocks";
 
 function MobileStore(){
+    let mobiles = stocks.filter((item)=>{
+        return item.category === 'mobile';
+    })
     return(
     <div>
         <Header/>
