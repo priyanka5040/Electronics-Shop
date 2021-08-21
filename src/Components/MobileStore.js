@@ -2,17 +2,42 @@ import Header from "./Header";
 import Items from "./Items";
 import "../storeStyle.css";
 import {stocks} from "./stocks";
+import Filter from "./Filter";
+import { useEffect, useState } from "react";
 
 function MobileStore(){
-    let mobiles = stocks.filter((item)=>{
-        return item.category === 'mobile';
-    })
+    let [mobiles, setMobiles] = useState([]);
+
+    useEffect(()=>{
+        setMobiles(stocks.filter((item)=>{
+            return item.category === 'mobile';
+        }));
+
+    },[]);
+
+    
+
+    function setFilter(filter){
+        if(filter === "all"){
+            setMobiles(stocks.filter((item)=>{
+                return (item.category === 'mobile');
+            }));
+        }
+        else{
+            setMobiles(stocks.filter((item)=>{
+                return (item.category === 'mobile' && item.name.includes(filter));
+            }));
+        }
+        
+    }
+
     return(
     <div>
         <Header/>
         <div className="store">
             <div className="side">
-                
+                <Filter setFilter = {setFilter} type="mobile"/>
+
             </div>
             <div className="app">
                 {mobiles.map((mobile) => {
@@ -22,6 +47,7 @@ function MobileStore(){
             </div>
         </div>
     </div>
+
     );
 }
 export default MobileStore;

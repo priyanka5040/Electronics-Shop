@@ -3,8 +3,8 @@
     margin-top: 2%;
 }
 .side{
-    width : 35vw;
-    border-right: 1px solid rgb(180, 178, 178);
+    width : 15vw;
+    border-right: 2px solid rgb(180, 178, 178);
 }
 .description{
     display:flex;
@@ -26,10 +26,20 @@
 .addToCart:hover{
     background-color:rgb(88, 88, 88);
 }
+.partition{
+    width:100%;
+    margin : 20px 0px 20px 0px;
+    border:0.2px solid rgb(133, 130, 130);
+    
+}
+.brands div{
+    margin-top : 20px;
+}
 .app{
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    width:85vw;
 }
 .items{
     margin-bottom:7%;
@@ -39,7 +49,9 @@
     display:flex;
     flex-direction: column;
     justify-content:center;
+    
 }
+
 .items img{
     display: block;
     height : 13rem;
@@ -49,4 +61,3 @@
 .items img:hover{
     transform: rotate(4deg);
 }
-

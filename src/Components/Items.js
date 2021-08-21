@@ -9,22 +9,28 @@ function Items(props) {
     let {addToCart} = useContext(cartContext);
     //console.log(addToCart);
     let url = "./ProductDetail/"+item.id;
-
+    
     return(
         <div className="items">
             <Link to={url}><img src={item.url} alt="img"/></Link>
+            
 
             <div className="description">
                 <h2 className="desc">{item.name}</h2>
                 <p className="desc">{item.description}</p>
                 <h3 className="desc">Rs.{item.price}</h3>
-                
-                <div className="desc"><button className="addToCart"  onClick={() =>{
-                    addToCart(item);
+                <div className="desc">
+                    <button className="addToCart"  onClick={(e) =>{
+                    
+                        e.target.innerText = "Added";
+                        addToCart(item);
+                    
                 }}>
                     Add to cart</button></div>
+
             </div>
         </div>
+        
     );
 }
 export default Items;
