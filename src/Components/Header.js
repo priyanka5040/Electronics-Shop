@@ -2,7 +2,6 @@ import "../headerStyle.css";
 import logo from "./images/logo.jpg";
 import cart from "./images/cart.png";
 import open from "./images/open.jpg";
-import closeIcon from "./images/cross.png";
 import {useState} from "react";
 import {Link} from "react-router-dom";
 
@@ -10,16 +9,14 @@ function Header() {
     let [sidebar, setSidebar] = useState(false);
 
     return <div className = "header">
-
         <div className="logoNav">
-            <div className="sideIcon"><img src={open} className = "open" alt="open" onClick={
+            <div className="sideIcon"><img src={open} className = "logo" alt="open" onClick={
                 ()=>{
                     setSidebar(true);
                 }
             } /></div>
             <div><Link to = "/" style={{ textDecoration: 'none'}}><img className = "logo" src = {logo} alt="logo" /></Link></div>
         </div>
-
 
         <div className = "nav">
             <div><Link to = "/MobileStore" style={{ textDecoration: 'none'}}><li id="mobile" className = "navItems">Mobile Phones</li></Link></div>
@@ -28,12 +25,10 @@ function Header() {
             <div><Link to = "/" style={{ textDecoration: 'none'}}><li id="laptop" className = "navItems">Laptops</li></Link></div>
         </div>
 
-
         <div style = {sidebar ? {display : 'block'} : {display: 'none'} } className = "sideNav">
-            <div><img src={closeIcon} alt="close" onClick={() =>{
+            <div><img src="https://www.sendai-airport.co.jp/special/201912winter/m/dist/images/common/btn-pop-close.png" alt="close" onClick={() =>{
                 setSidebar(false);
             }}/></div>
-
 
             <div className="sideNavMenu">
                 <div><Link to = "/MobileStore" style={{ textDecoration: 'none'}}><li id="mobile" className = "navItems">Mobile Phones</li></Link></div>
@@ -42,7 +37,6 @@ function Header() {
                 <div><Link to = "/" style={{ textDecoration: 'none'}}><li id="laptop" className = "navItems">Laptops</li></Link></div>
             </div>
         </div>
-
 
         <div className = "cartContainer">
             <Link to = "/Cart"><img className = "cartIcon" src = {cart} alt="cart" /></Link></div>

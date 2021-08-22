@@ -30,7 +30,6 @@
     width:100%;
     margin : 20px 0px 20px 0px;
     border:0.2px solid rgb(133, 130, 130);
-    
 }
 .brands div{
     margin-top : 20px;
@@ -49,15 +48,22 @@
     display:flex;
     flex-direction: column;
     justify-content:center;
-    
 }
-
 .items img{
     display: block;
     height : 13rem;
     width:13rem;
     padding:15%;
+    align-self: center;
 }
 .items img:hover{
     transform: rotate(4deg);
+}
+@media only screen and (max-width : 600px){
+    .side{
+        width : 35vw;
+    }
+    .app{
+        width:70vw;
+    }
 }
