@@ -1,9 +1,7 @@
 import "../cartStyle.css";
 import {React, useContext} from "react";
 import {cartContext} from "../App";
-import remove from "./images/cross.png";
 import Header from "./Header";
-
 
 function Cart(props) {
 
@@ -23,7 +21,6 @@ function Cart(props) {
         <div className="cartList">
             {cartItems.map((ele, index)=>{
                 total += ele.price * ele.qty;
-                
                 return<div key={ele.id} className="cart">
                         <div className="cartItem">
                             <img className="cartItemImg" src={ele.url} alt={ele.name}/>
@@ -51,7 +48,7 @@ function Cart(props) {
                             Rs.{ele.price * ele.qty}
                         </div>
                         <div className="removeItem">
-                            <img src={remove} alt="removeItem" onClick = {
+                            <img src="https://icon-library.com/images/delete-icon/delete-icon-13.jpg" alt="removeItem" onClick = {
                                 ()=>{
                                     removeFromCart(index);
                                 }

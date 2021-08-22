@@ -16,10 +16,10 @@ function ProductDetail(){
 
     return(<>
         <Header />
-        <div class="itemDetails">
-            <div class="content"><img class = "productImg" src={prod.url} alt={prod.name} /></div>
+        <div className="itemDetails">
+            <div className="content"><img className = "productImg" src={prod.url} alt={prod.name} /></div>
 
-            <div class="content">
+            <div className="content">
                 <h1>{prod.name}</h1>
                 <p>{prod.description}</p>
                 <h1>Amount - {prod.price}</h1>
