@@ -5,6 +5,7 @@
 .side{
     width : 15vw;
     border-right: 2px solid rgb(180, 178, 178);
+   
 }
 .description{
     display:flex;
@@ -30,6 +31,7 @@
     width:100%;
     margin : 20px 0px 20px 0px;
     border:0.2px solid rgb(133, 130, 130);
+    
 }
 .brands div{
     margin-top : 20px;
@@ -42,13 +44,16 @@
 }
 .items{
     margin-bottom:7%;
-    box-shadow: 2px 2px 2px 2px rgb(204, 202, 202);
+    box-shadow: 1px 1px 1px 1px rgb(204, 202, 202);
     height : 30rem;
     width:20rem;
     display:flex;
     flex-direction: column;
     justify-content:center;
+    align-items: center;
+    
 }
+
 .items img{
     display: block;
     height : 13rem;
@@ -66,4 +71,20 @@
     .app{
         width:70vw;
     }
+    .items{
+        margin:7%;
+        height : 20rem;
+        width:15rem;
+    }
+    
+    .items img{
+        height : 5rem;
+        width:5rem;
+        padding:7%;
+    }
+    .app h1{
+        font-size:30%;
+    }
+    
+
 }

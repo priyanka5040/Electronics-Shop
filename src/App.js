@@ -2,6 +2,7 @@ import Home from "./Components/Home";
 import MobileStore from "./Components/MobileStore";
 import ProductDetail from "./Components/ProductDetail";
 import HeadphoneStore from "./Components/HeadphoneStore";
+import Header from "./Components/Header";
 import Cart from "./Components/Cart";
 import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import React from "react";
@@ -56,6 +57,7 @@ export default function App() {
         removeFromCart : removeFromCart
       }}>
       <Router>
+        <Header cartItems = {cartItems} />
         <Switch>
           <Route path="/" exact component={Home} />
           <Route path="/MobileStore" component={MobileStore}/>

@@ -1,4 +1,3 @@
-import Header from "./Header";
 import Items from "./Items";
 import "../storeStyle.css";
 import {stocks} from "./stocks";
@@ -33,7 +32,7 @@ function HeadphoneStore(){
 
     return(
     <div>
-        <Header/>
+       
         <div className="store">
             <div className="side">
                 <Filter setFilter={ setFilter } type = "headphone" />

@@ -1,27 +1,33 @@
-import Header from "./Header";
 import "../homeStyle.css";
 import mobile from "./images/mobiles.jpg";
 import headphone from "./images/headphones.jpg";
 import laptop from "./images/laptops.jpg";
 import watch from "./images/watches.jpg";
+import {Link} from "react-router-dom";
+
 function Home(){
+    
     return<>
-        <Header/>
+        
         <div className="home">
+
         </div>
+        
         <div className="register">
             <h1>Signup to start shopping!</h1>
             <div className="details">
                 <input type="text" placeholder="Enter your email"/>
                 <button>Signup</button>
             </div>
+                
             </div>
         <div>
             <h1 className="category">Shop by category</h1>
         </div>
+
         <div className="blocks">
             <div className="block">
-                <div className="homeBlockImg"><img src={mobile} alt="img"/></div>
+                <Link to="./MobileStore"><div className="homeBlockImg"><img src={mobile} alt="img"/></div></Link>
                  <div>
                     <div>
                         <h2>Mobile Phones</h2>
@@ -31,7 +37,8 @@ function Home(){
                  </div>
             </div>
             <div className="line"></div>
-            <div className="block">
+
+            <div className="block rev">
                 <div>
                     <div>
                         <h2>Laptops</h2>
@@ -41,9 +48,11 @@ function Home(){
                 </div>
                 <div className="homeBlockImg"><img src={laptop} alt="img"/></div>
             </div>
+
             <div className="line"></div>
+
             <div className="block">
-                <div className="homeBlockImg"><img src={headphone} alt="img"/></div>
+                <Link to="./HeadphoneStore"><div className="homeBlockImg"><img src={headphone} alt="img"/></div></Link>
                 <div>
                     <div>
                         <h2>Headphones</h2>
@@ -52,8 +61,10 @@ function Home(){
                     </div>
                 </div>
             </div>
+
             <div className="line"></div>
-            <div className="block">
+
+            <div className="block rev">
                 <div>
                     <div>
                         <h2>Watches</h2>
@@ -63,6 +74,8 @@ function Home(){
                 </div>
                 <div className="homeBlockImg"><img src={watch} alt="img"/></div>
             </div>
+        
+        
         </div>
         <div className="footer">
             <p style={{color:'white'}} >@coyright 2021  All rights reserved</p>

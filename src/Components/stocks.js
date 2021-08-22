@@ -1,5 +1,6 @@
 import img from "./images/mobiles/mob3.jpg";
 import img2 from "./images/headphones/headphone1.jpg";
+
 let stocks = [ {
                     id:1,name:"Samsung S21 ultra",
                     category : 'mobile', 
@@ -8,6 +9,7 @@ let stocks = [ {
                     price : 75990,
                     qty : 5 
                 },
+
                 {
                     id:2,name:"Redmi - 9A",
                     category : 'mobile',
@@ -24,6 +26,7 @@ let stocks = [ {
                     price : 50900,
                     qty : 5 
                 },
+
                 {
                     id:4,name:"Samsung galaxy note 10 plus",
                     category : 'mobile',
@@ -41,6 +44,7 @@ let stocks = [ {
                     price : 56900,
                     qty : 5 
                 },
+
                 {
                     id:6,
                     name:"Samsung galaxy fold",
@@ -59,6 +63,7 @@ let stocks = [ {
                     price : 93500,
                     qty : 5 
                 },
+
                 {
                     id:8,
                     name:"Samsung",
@@ -76,6 +81,7 @@ let stocks = [ {
                     price : 123,
                     qty : 5 
                 },
+
                 {
                     id:10,name:"Redmi Note 8",
                     category : 'mobile',
@@ -92,12 +98,13 @@ let stocks = [ {
                     price : 123,
                     qty : 5 
                 },
+
                 {
                     id:12,name:"Sony",
                     category : 'headphone',
                     url : img2,
                     description:'Color - White',
-                    price : 70000,
+                    price : 1500,
                     qty : 5
                 },
                 {
@@ -108,6 +115,7 @@ let stocks = [ {
                     price : 2499,
                     qty : 5 
                 },
+
                 {
                     id:14,name:"JBL",
                     category : 'headphone',
@@ -121,9 +129,10 @@ let stocks = [ {
                     category : 'headphone', 
                     url : "https://1.bp.blogspot.com/-_iyKi1rqlxY/XdpBff8vRVI/AAAAAAAAFfU/dm2q6Vdx31MODPUqzF_SLJpILZeJ5BBXwCNcBGAsYHQ/s640/JBL1.jpg",
                     description:'Color - Red', 
-                    price : 123,
+                    price : 2000,
                     qty : 5 
                 },
+
                 {
                     id:16,name:"Boat",
                     category : 'headphone',
@@ -140,6 +149,7 @@ let stocks = [ {
                     price : 1999,
                     qty : 5 
                 },
+
                 {
                     id:18,name:"Sony",
                     category : 'headphone',
@@ -156,12 +166,13 @@ let stocks = [ {
                     price : 1499,
                     qty : 5 
                 },
+
                 {
                     id:20,name:"JBL",
                     category : 'headphone',
                     description:'Color - White', 
                     url : img2, 
-                    price : 70000,
+                    price : 1700,
                     qty : 5
                 },
                 {
@@ -169,9 +180,10 @@ let stocks = [ {
                     category : 'headphone', 
                     url : img2,
                     description:'Color - White',  
-                    price : 123,
+                    price : 1500,
                     qty : 5 
                 },
+
                 {
                     id:22,
                     name:"Boat",
@@ -182,4 +194,5 @@ let stocks = [ {
                     qty : 5
                 },
             ];
+                
 export {stocks};

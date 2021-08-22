@@ -23,6 +23,7 @@
     width:100vw;
     top:1px;
     overflow-x: hidden;
+
 }
 .register h1{
     margin-bottom: 5%;
@@ -44,6 +45,7 @@
 .details button:hover{
     background-color: rgb(55, 55, 56);
 }
+
 .category{
     margin-top:5%;
     text-align: center;
@@ -62,6 +64,7 @@
     height:400px;
     width:350px;
 }
+
 .block >div{
     margin: 0% 5% 0% 5% ;
     display:flex;
@@ -71,6 +74,7 @@
     border: 1px solid black;
     margin:10% 20% 10% 20%;
 }
+
 .footer{
     height:20vh;
     background-color:rgb(56, 55, 55);
@@ -79,6 +83,7 @@
     justify-content: center;
     align-items: center;
 }
+
 @media screen and (max-width:600px){
     .home{
         height:100vh;
@@ -90,6 +95,7 @@
     .details button{
         padding: 5%;
         width:20%;
+        
     }
     .register h1{
         margin-bottom: 5%;
@@ -102,19 +108,26 @@
     .block{
         flex-direction: column;
         margin-top:5%;
+        box-shadow: 2px 2px 8px 2px #bebdbd;
     }
     .block img{
         height:200px;
         width:150px;
         margin:20px;
     }
+    .block p{
+        padding : 15px;
+    }
     .homeBlockImg{
         width:80vw;
         display: flex;
         justify-content:center;
+
     }
     .line{
-        border: 1px solid black;
-        margin:10% 2% 10% 2%;
+        display: none;
+    }
+    .rev{
+        flex-direction: column-reverse;
     }
 }

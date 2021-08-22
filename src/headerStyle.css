@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 .header{
     display: flex;
     justify-content: space-between;
@@ -27,6 +28,8 @@
     display:flex;
     align-items: center;
     margin-right: 2%;
+    position:relative;
+    
 }
 .nav{
     display: flex;
@@ -54,6 +57,19 @@
 .sideNav{
     display: none;
 }
+.noOfCart{
+    position:absolute;
+    top:3px;
+    right:0px;
+    background-color:red;
+    border-radius: 100%;
+    color:white;
+    
+}
+.noOfCart h3{
+    padding:3px;
+}
+
 @media screen and (max-width:600px){
     .nav{
         display: none;
@@ -67,14 +83,19 @@
         position :absolute;
         top:2px;
         z-index: 1;      
+
     }
+    
     .sideNav img{
         height :40px;
         width:40px;
+
     }
     .sideNavMenu{
         display : flex;
         flex-direction:column;
+        
+
     }
     .sideNavMenu div, li{
         padding: 20px 5px 5px 20px;
@@ -84,4 +105,9 @@
     .sideIcon{
         display:block;
     }
+    .logo{
+        height:50px;
+        width:50px;
+    }
+
 }

@@ -2,16 +2,13 @@ import "../storeStyle.css";
 
 function Filter(props) {
     const {setFilter, type} = props;
-
     if(type === "mobile"){
-
         return(<div className="filter">
-
             <div className="brands">
-
                 <h2>Filter</h2>
                 <div className="partition"></div>
                 <h4>Brands</h4>
+
                 <div><input type="radio" name="brand" onChange={()=>{
                     setFilter("Redmi");
                 }}/>Redmi</div>
@@ -24,19 +21,21 @@ function Filter(props) {
                 <div><input type="radio" name="brand" onChange={()=>{
                     setFilter("all");
                 }} />All brands</div>
+                
+                
             </div>
             <div className="partition" ></div>
+
         </div>);
     }
     else{
         return(
             <div className="filter">
-
             <div className="brands">
-                
                 <h2>Filter</h2>
                 <div className="partition"></div>
                 <h4>Brands</h4>
+
                 <div><input type="radio" name="brand" onChange={()=>{
                     setFilter("Sony");
                 }}/>Sony</div>
@@ -49,10 +48,14 @@ function Filter(props) {
                 <div><input type="radio" name="brand" onChange={()=>{
                     setFilter("all");
                 }} />All brands</div>
+                
+                
             </div>
             <div className="partition" ></div>
+
         </div>
         );
     }
+
 }
 export default Filter;
